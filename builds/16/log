@@ -1,0 +1,42 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/BHT-EMR-API-Scanning/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+ > git rev-list --no-walk 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+[BHT-EMR-API-Scanning] $ /bin/sh -xe /tmp/jenkins15388965569018640350.sh
++ cd /var/lib/jenkins
++ cd /var/www/BHT-EMR-API
++ rm -rf Gemfile.lock
++ rm -rf test_cases_results.html
++ bin/rspec --format html --out test_cases_results.html
+/home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/resolver.rb:287:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'rails (~> 5.2.1)' in any of the gem sources listed in your Gemfile or in gems cached in vendor/cache. (Bundler::GemNotFound)
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/resolver.rb:255:in `each'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/resolver.rb:255:in `verify_gemfile_dependencies_are_found!'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/resolver.rb:49:in `start'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/resolver.rb:22:in `resolve'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:258:in `resolve'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:170:in `specs'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:237:in `specs_for'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/definition.rb:226:in `requested_specs'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:108:in `block in definition_method'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/runtime.rb:20:in `setup'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler.rb:107:in `setup'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/bundler/setup.rb:20:in `<top (required)>'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/sonarqb-user/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from bin/rspec:27:in `<main>'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,92 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/POC-Scanning
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/HISMalawi/BHT-EMR-API.git
+ > git init /var/lib/jenkins/workspace/POC-Scanning # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+First time build. Skipping changelog.
+Unpacking https://repo1.maven.org/maven2/org/sonarsource/scanner/cli/sonar-scanner-cli/4.7.0.2747/sonar-scanner-cli-4.7.0.2747.zip to /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/Sonar_Scanner_4 on Jenkins
+[POC-Scanning] $ /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/Sonar_Scanner_4/bin/sonar-scanner -Dsonar.host.url=http://10.44.0.166:9000 ******** -Dsonar.language=ruby -Dsonar.projectName=POC-Scanning -Dsonar.sourceEncoding=UTF-8 -Dsonar.login=squ_24ecf95eacc1cac4121ea3cdd917e69dc966eb75 -Dsonar.host.url=http://10.44.0.166:9000 -Dsonar.projectVersion=1.0 -Dsonar.sources=. -Dsonar.project.settings=/var/lib/jenkins/workspace/POC-Scanning/sonar-project.properties -Dsonar.analysis.mode=publish -Dsonar.buildbreaker.skip=true -Dsonar.verbose=true -Dsonar.projectKey=POC-Scanning -Dsonar.projectBaseDir=/var/lib/jenkins/workspace/POC-Scanning
+
+    -Xbatch           disable background compilation
+    -Xbootclasspath/a:<directories and zip/jar files separated by :>
+                      append to end of bootstrap class path
+    -Xcheck:jni       perform additional checks for JNI functions
+    -Xcomp            forces compilation of methods on first invocation
+    -Xdebug           provided for backward compatibility
+    -Xdiag            show additional diagnostic messages
+    -Xfuture          enable strictest checks, anticipating future default
+    -Xint             interpreted mode execution only
+    -Xinternalversion
+                      displays more detailed JVM version information than the
+                      -version option
+    -Xloggc:<file>    log GC status to a file with time stamps
+    -Xmixed           mixed mode execution (default)
+    -Xmn<size>        sets the initial and maximum size (in bytes) of the heap
+                      for the young generation (nursery)
+    -Xms<size>        set initial Java heap size
+    -Xmx<size>        set maximum Java heap size
+    -Xnoclassgc       disable class garbage collection
+    -Xrs              reduce use of OS signals by Java/VM (see documentation)
+    -Xshare:auto      use shared class data if possible (default)
+    -Xshare:off       do not attempt to use shared class data
+    -Xshare:on        require using shared class data, otherwise fail.
+    -XshowSettings    show all settings and continue
+    -XshowSettings:all
+                      show all settings and continue
+    -XshowSettings:locale
+                      show all locale related settings and continue
+    -XshowSettings:properties
+                      show all property settings and continue
+    -XshowSettings:vm
+                      show all vm related settings and continue
+    -XshowSettings:system
+                      (Linux Only) show host system or container
+                      configuration and continue
+    -Xss<size>        set java thread stack size
+    -Xverify          sets the mode of the bytecode verifier
+    --add-reads <module>=<target-module>(,<target-module>)*
+                      updates <module> to read <target-module>, regardless
+                      of module declaration. 
+                      <target-module> can be ALL-UNNAMED to read all unnamed
+                      modules.
+    --add-exports <module>/<package>=<target-module>(,<target-module>)*
+                      updates <module> to export <package> to <target-module>,
+                      regardless of module declaration.
+                      <target-module> can be ALL-UNNAMED to export to all
+                      unnamed modules.
+    --add-opens <module>/<package>=<target-module>(,<target-module>)*
+                      updates <module> to open <package> to
+                      <target-module>, regardless of module declaration.
+    --illegal-access=<value>
+                      permit or deny access to members of types in named modules
+                      by code in unnamed modules.
+                      <value> is one of "deny", "permit", "warn", or "debug"
+                      This option will be removed in a future release.
+    --limit-modules <module name>[,<module name>...]
+                      limit the universe of observable modules
+    --patch-module <module>=<file>(:<file>)*
+                      override or augment a module with classes and resources
+                      in JAR files or directories.
+    --disable-@files  disable further argument file expansion
+    --source <version>
+                      set the version of the source in source-file mode.
+
+These extra options are subject to change without notice.
+
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succeed?
+Finished: SUCCESS

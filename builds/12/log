@@ -1,0 +1,139 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/BHT-EMR-API-Scanning/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+ > git rev-list --no-walk 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+[BHT-EMR-API-Scanning] $ /bin/sh -xe /tmp/jenkins17333131464437540244.sh
++ cd /var/lib/jenkins
++ cd /var/www/BHT-EMR-API
++ bin/initial_database_setup.sh test moh
++ export RAILS_ENV=test
++ RAILS_ENV=test
++ rails db:environment:set RAILS_ENV=test
+bin/initial_database_setup.sh: line 22: rails: command not found
++ bundle exec rake db:drop db:create db:seed
+bin/initial_database_setup.sh: line 25: bundle: command not found
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''test'\'']['\''username'\'']'
+bin/initial_database_setup.sh: line 27: ruby: command not found
++ USERNAME=
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''test'\'']['\''password'\'']'
+bin/initial_database_setup.sh: line 28: ruby: command not found
++ PASSWORD=
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''test'\'']['\''database'\'']'
+bin/initial_database_setup.sh: line 29: ruby: command not found
++ DATABASE=
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''test'\'']['\''host'\'']'
+bin/initial_database_setup.sh: line 30: ruby: command not found
++ HOST=
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ echo 'Schema additions ----------------------------------------------------------------------------------'
+Schema additions ----------------------------------------------------------------------------------
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ echo 'Defaults ------------------------------------------------------------------------------------'
+Defaults ------------------------------------------------------------------------------------
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ echo 'User schema modifications -------------------------------------------------------------------------'
+User schema modifications -------------------------------------------------------------------------
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ bundle exec rake db:migrate
+bin/initial_database_setup.sh: line 75: bundle: command not found
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ mysql --host= --user= --password=
+Warning: Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'jenkins'@'localhost' (using password: NO)
++ echo 'After completing database setup, you are advised to run the following:'
+After completing database setup, you are advised to run the following:
++ echo 'rake test'
+rake test
++ echo 'rake cucumber'
+rake cucumber
++ bin/rspec --format html --out test_cases_results.html
+/usr/bin/env: ‘ruby’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

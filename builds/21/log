@@ -1,0 +1,33 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/BHT-EMR-API-Scanning/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+ > git rev-list --no-walk 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+[BHT-EMR-API-Scanning] $ /bin/bash -I /tmp/jenkins1293772360852076872.sh
+From https://github.com/HISMalawi/BHT-EMR-API
+   e2f475fa..a8b24f05  feature/patient-merge-history -> origin/feature/patient-merge-history
+HEAD is now at 9a15bbf6 Merge pull request #184 from HISMalawi/add/overview_report
+/usr/bin/env: ‘ruby_executable_hooks’: No such file or directory
+/usr/bin/env: ‘ruby_executable_hooks’: No such file or directory
+./update-api.sh: line 12: rake: command not found
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+User*12345
+[sudo] password for jenkins: 
+sudo: no password was provided
+Finished: SUCCESS

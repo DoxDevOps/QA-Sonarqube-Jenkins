@@ -1,0 +1,304 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/BHT-EMR-API-Scanning/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+ > git rev-list --no-walk 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+[BHT-EMR-API-Scanning] $ /bin/sh -xe /tmp/jenkins4167867953079191040.sh
++ cd /var/lib/jenkins
++ cd /var/www/BHT-EMR-API/
++ git config --global --add safe.directory /var/www/BHT-EMR-API
++ git fetch --tags -f
++ git rev-list --tags --max-count=1
++ git describe --tags 9a15bbf688d5e2a24d8ec18febea126a5451ff48
++ latestTag=v4.15.23
++ git checkout v4.15.23 -f
+HEAD is now at 9a15bbf6 Merge pull request #184 from HISMalawi/add/overview_report
++ ./update-api.sh
+Unknown ruby interpreter version (do not know how to handle): >=2.5.3,<3.0.0.
+Using /var/lib/jenkins/.rvm/gems/ruby-2.5.3
+Resolving dependencies...
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Installing rake 13.0.6
+Installing concurrent-ruby 1.1.10
+Installing i18n 1.12.0
+Installing minitest 5.15.0
+Installing thread_safe 0.3.6
+Installing tzinfo 1.2.10
+Installing activesupport 5.2.8.1
+Installing builder 3.2.4
+Installing erubi 1.11.0
+Installing racc 1.6.0 with native extensions
+Installing nokogiri 1.12.5 (x86_64-linux)
+Installing rails-dom-testing 2.0.3
+Installing crass 1.0.6
+Installing loofah 2.18.0
+Installing rails-html-sanitizer 1.4.3
+Installing actionview 5.2.8.1
+Installing rack 2.2.4
+Installing rack-test 2.0.2
+Installing actionpack 5.2.8.1
+Installing nio4r 2.5.8 with native extensions
+Installing websocket-extensions 0.1.5
+Installing websocket-driver 0.7.5 with native extensions
+Installing actioncable 5.2.8.1
+Installing globalid 1.0.0
+Installing activejob 5.2.8.1
+Installing mini_mime 1.1.2
+Installing mail 2.7.1
+Installing actionmailer 5.2.8.1
+Installing activemodel 5.2.8.1
+Installing arel 9.0.0
+Installing activerecord 5.2.8.1
+Installing marcel 1.0.2
+Installing activestorage 5.2.8.1
+Installing public_suffix 4.0.7
+Installing addressable 2.8.0
+Installing bindex 0.8.1 with native extensions
+Installing msgpack 1.5.4 with native extensions
+Installing bootsnap 1.13.0 with native extensions
+Using bundler 1.17.3
+Installing byebug 11.1.3 with native extensions
+Installing chronic 0.10.2
+Installing composite_primary_keys 11.3.1
+Installing httpclient 2.8.3
+Installing mime-types-data 3.2022.0105
+Installing mime-types 3.4.1
+Installing multi_json 1.15.0
+Installing couchrest 2.0.1
+Installing diff-lcs 1.5.0
+Installing unf_ext 0.0.8.2 with native extensions
+Installing unf 0.1.4
+Installing domain_name 0.5.20190701
+Installing method_source 1.0.0
+Installing thor 1.2.1
+Installing railties 5.2.8.1
+Installing sprockets 4.1.1
+Installing sprockets-rails 3.4.2
+Installing rails 5.2.8.1
+Installing emr_ohsp_interface 1.1.0
+Installing event_emitter 0.2.6
+Installing factory_bot 6.2.1
+Installing factory_bot_rails 6.2.0
+Installing ffi 1.15.5 with native extensions
+Installing parallel 1.20.1
+Installing multi_xml 0.6.0
+Installing httparty 0.20.0
+Installing json 2.6.2 with native extensions
+Installing websocket 1.2.9
+Installing websocket-client-simple 0.3.1
+Installing socket.io-client-simple 1.2.1
+Installing his_emr_api_lab 1.1.24
+Installing his_emr_api_radiology 0.0.8
+Installing http-accept 1.7.0
+Installing http-cookie 1.0.5
+Installing json-schema 2.8.1
+Installing rb-fsevent 0.11.1
+Installing rb-inotify 0.10.1
+Installing ruby_dep 1.5.0
+Installing listen 3.1.5
+Installing mysql2 0.5.4 with native extensions
+Installing netrc 0.11.0
+Installing passenger 6.0.14 with native extensions
+Installing power_assert 2.0.1
+Installing puma 4.3.12 with native extensions
+Installing rack-cors 1.1.1
+Installing rest-client 2.1.0
+Installing rubyzip 2.3.2
+Installing roo 2.8.3
+Installing rspec-support 3.11.0
+Installing rspec-core 3.11.0
+Installing rspec-expectations 3.11.0
+Installing rspec-mocks 3.11.1
+Installing rspec 3.11.0
+Installing rspec-rails 5.1.2
+Installing rswag-api 2.5.1
+Installing rswag-specs 2.5.1
+Installing rswag-ui 2.5.1
+Installing spring 2.1.1
+Installing spring-watcher-listen 2.0.1
+Installing test-unit 3.5.3
+Installing web-console 3.7.0
+Installing whenever 1.0.0
+Updating files in vendor/cache
+Removing outdated .gem files from vendor/cache
+  * rspec-support-3.10.3.gem
+  * passenger-6.0.12.gem
+  * erubi-1.10.0.gem
+  * rails-5.2.6.gem
+  * activemodel-5.2.6.gem
+  * rspec-core-3.10.1.gem
+  * actionview-5.2.6.gem
+  * mini_portile2-2.6.1.gem
+  * puma-4.3.10.gem
+  * rspec-rails-5.0.2.gem
+  * minitest-5.14.4.gem
+  * ffi-1.15.4.gem
+  * tzinfo-1.2.9.gem
+  * rack-2.2.3.gem
+  * msgpack-1.4.2.gem
+  * actioncable-5.2.6.gem
+  * actionmailer-5.2.6.gem
+  * rails-html-sanitizer-1.4.2.gem
+  * bootsnap-1.9.1.gem
+  * i18n-1.8.11.gem
+  * concurrent-ruby-1.1.9.gem
+  * factory_bot-6.2.0.gem
+  * thor-1.1.0.gem
+  * rack-test-1.1.0.gem
+  * activesupport-5.2.6.gem
+  * rb-fsevent-0.11.0.gem
+  * unf_ext-0.0.8.gem
+  * actionpack-5.2.6.gem
+  * loofah-2.12.0.gem
+  * his_emr_api_radiology-0.0.7.gem
+  * rspec-mocks-3.10.2.gem
+  * rspec-3.10.0.gem
+  * globalid-0.5.2.gem
+  * sprockets-rails-3.4.0.gem
+  * sprockets-4.0.2.gem
+  * rswag-ui-2.4.0.gem
+  * test-unit-3.5.1.gem
+  * diff-lcs-1.4.4.gem
+  * rswag-api-2.4.0.gem
+  * his_emr_api_lab-1.1.23.gem
+  * activerecord-5.2.6.gem
+  * railties-5.2.6.gem
+  * mysql2-0.5.3.gem
+  * activestorage-5.2.6.gem
+  * rspec-expectations-3.10.1.gem
+  * mime-types-data-3.2021.1115.gem
+  * http-cookie-1.0.4.gem
+  * activejob-5.2.6.gem
+Bundle complete! 26 Gemfile dependencies, 101 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from httparty:
+When you HTTParty, you must party hard!
+Post-install message from websocket-client-simple:
+The development of this gem has moved to https://github.com/ruby-jp/websocket-client-simple.
+Post-install message from rubyzip:
+RubyZip 3.0 is coming!
+**********************
+
+The public API of some Rubyzip classes has been modernized to use named
+parameters for optional arguments. Please check your usage of the
+following classes:
+  * `Zip::File`
+  * `Zip::Entry`
+  * `Zip::InputStream`
+  * `Zip::OutputStream`
+
+Please ensure that your Gemfiles and .gemspecs are suitably restrictive
+to avoid an unexpected breakage when 3.0 is released (e.g. ~> 2.3.0).
+See https://github.com/rubyzip/rubyzip for details. The Changelog also
+lists other enhancements and bugfixes that have been implemented since
+version 2.3.0.
++ export RAILS_ENV=development
++ RAILS_ENV=development
++ rails db:environment:set RAILS_ENV=development
+Rails Error: Unable to access log file. Please ensure that /var/www/BHT-EMR-API/log/development.log exists and is writable (ie, make it writable for user and group: chmod 0664 /var/www/BHT-EMR-API/log/development.log). The log level has been raised to WARN and the output directed to STDERR until the problem is fixed.
+  [1m[35m (0.8ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''username'\'']'
++ USERNAME=root
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''password'\'']'
++ PASSWORD=root
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''database'\'']'
++ DATABASE=openmrs
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''host'\'']'
++ HOST=localhost
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''port'\'']'
++ PORT=
++ rails db:migrate
+Rails Error: Unable to access log file. Please ensure that /var/www/BHT-EMR-API/log/development.log exists and is writable (ie, make it writable for user and group: chmod 0664 /var/www/BHT-EMR-API/log/development.log). The log level has been raised to WARN and the output directed to STDERR until the problem is fixed.
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('8460232881146418435', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8460232881146418435')[0m
+  ↳ bin/rails:9
+rails aborted!
+Errno::EACCES: Permission denied @ rb_sysopen - /var/www/BHT-EMR-API/db/schema.rb
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:250:in `initialize'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:250:in `open'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:250:in `block (3 levels) in <top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:68:in `block (2 levels) in <top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:61:in `block (2 levels) in <top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/railties-5.2.8.1/lib/rails/commands/rake/rake_command.rb:23:in `block in perform'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/railties-5.2.8.1/lib/rails/commands/rake/rake_command.rb:20:in `perform'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/railties-5.2.8.1/lib/rails/command.rb:48:in `invoke'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/railties-5.2.8.1/lib/rails/commands.rb:18:in `<top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/bootsnap-1.13.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/bootsnap-1.13.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+/var/www/BHT-EMR-API/bin/rails:9:in `<top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `load'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/lib/spring/client/rails.rb:28:in `call'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/lib/spring/client/command.rb:7:in `call'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/lib/spring/client.rb:30:in `run'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/bin/spring:49:in `<top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `load'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/spring-2.1.1/lib/spring/binstub.rb:11:in `<top (required)>'
+/var/www/BHT-EMR-API/bin/spring:15:in `require'
+/var/www/BHT-EMR-API/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+Tasks: TOP => db:schema:dump
+(See full trace by running task with --trace)
+Rails Error: Unable to access log file. Please ensure that /var/www/BHT-EMR-API/log/development.log exists and is writable (ie, make it writable for user and group: chmod 0664 /var/www/BHT-EMR-API/log/development.log). The log level has been raised to WARN and the output directed to STDERR until the problem is fixed.
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT GET_LOCK('8460232881146418435', 0)[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8460232881146418435')[0m
+  ↳ /var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/rake:23
+rake aborted!
+Errno::EACCES: Permission denied @ rb_sysopen - /var/www/BHT-EMR-API/db/schema.rb
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:250:in `initialize'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:250:in `open'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:250:in `block (3 levels) in <top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:68:in `block (2 levels) in <top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.8.1/lib/active_record/railties/databases.rake:61:in `block (2 levels) in <top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/ruby_executable_hooks:24:in `eval'
+/var/lib/jenkins/.rvm/gems/ruby-2.5.3/bin/ruby_executable_hooks:24:in `<main>'
+Tasks: TOP => db:schema:dump
+(See full trace by running task with --trace)
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Finished: SUCCESS

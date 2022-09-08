@@ -1,0 +1,75 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.7.1"/>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.11.4">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/HISMalawi/BHT-EMR-API.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H 0 * * 0</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.sonar.SonarRunnerBuilder plugin="sonar@2.14">
+      <project></project>
+      <properties>sonar.projectBaseDir=/var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+sonar.language=ruby
+sonar.login=squ_24ecf95eacc1cac4121ea3cdd917e69dc966eb75
+sonar.projectVersion=1.0
+sonar.sources=.
+sonar.verbose=true
+sonar.projectKey=BHT-EMR-API-Scanning
+sonar.host.url=http://10.44.0.66:9000
+sonar.projectName=BHT-EMR-API-Scanning
+sonar.sourceEncoding=UTF-8
+sonar.project.settings=/var/lib/jenkins/workspace/BHT-EMR-API-Scanning/sonar-project.properties
+sonar.analysis.mode=publish
+sonar.buildbreaker.skip=true</properties>
+      <javaOpts></javaOpts>
+      <additionalArguments>-X</additionalArguments>
+      <jdk>(Inherit From Job)</jdk>
+      <task></task>
+    </hudson.plugins.sonar.SonarRunnerBuilder>
+    <hudson.tasks.Shell>
+      <command>cd ~
+cd /var/www/BHT-EMR-API/
+git config --global --add safe.directory /var/www/BHT-EMR-API
+git fetch --tags -f
+latestTag=$(git describe --tags `git rev-list --tags --max-count=1`)
+git checkout $latestTag -f
+#!/bin/bash -xl
+#rvm use 2.5.3
+#bundle install --local
+./update-api.sh
+#rm -rf test_cases_results.html
+#sudo -S /opt/nginx/sbin/nginx -s reload | echo User*12345
+#bin/rspec --format html --out test_cases_results.html</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

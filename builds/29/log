@@ -1,0 +1,55 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/BHT-EMR-API-Scanning/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+ > git rev-list --no-walk 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+[BHT-EMR-API-Scanning] $ /bin/sh -xe /tmp/jenkins3687620994946715183.sh
++ cd /var/lib/jenkins
++ cd /var/www/BHT-EMR-API/
++ git config --global --add safe.directory /var/www/BHT-EMR-API
++ git fetch --tags -f
+From https://github.com/HISMalawi/BHT-EMR-API
+   ed59d8bb..1c03df2c  development         -> origin/development
+   a8b24f05..eee492f6  feature/patient-merge-history -> origin/feature/patient-merge-history
+   e152a78c..bcdc89c7  fix/vl_disaggregated_report -> origin/fix/vl_disaggregated_report
+ * [new branch]        hts_concepts        -> origin/hts_concepts
+ * [new branch]        vl_migration_script -> origin/vl_migration_script
++ git rev-list --tags --max-count=1
++ git describe --tags 9a15bbf688d5e2a24d8ec18febea126a5451ff48
++ latestTag=v4.15.23
++ git checkout v4.15.23 -f
+HEAD is now at 9a15bbf6 Merge pull request #184 from HISMalawi/add/overview_report
++ bash update-api.sh
+/usr/bin/env: ‘ruby_executable_hooks’: No such file or directory
+rake aborted!
+Bundler::GemNotFound: Could not find gem 'rails (~> 5.2.1)' in any of the gem sources listed in your Gemfile or in gems cached in vendor/cache.
+/var/www/BHT-EMR-API/config/boot.rb:3:in `<top (required)>'
+/var/www/BHT-EMR-API/config/application.rb:1:in `require_relative'
+/var/www/BHT-EMR-API/config/application.rb:1:in `<top (required)>'
+/var/www/BHT-EMR-API/Rakefile:4:in `require_relative'
+/var/www/BHT-EMR-API/Rakefile:4:in `<top (required)>'
+/usr/share/rubygems-integration/all/gems/rake-13.0.1/exe/rake:27:in `<top (required)>'
+(See full trace by running task with --trace)
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
+Warning: Using a password on the command line interface can be insecure.
++ sudo -S /opt/nginx/sbin/nginx -s reload
++ echo User*12345
+User*12345
+[sudo] password for jenkins: 
+sudo: no password was provided
+Finished: SUCCESS

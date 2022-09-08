@@ -1,0 +1,244 @@
+Started by user [8mha:////4HKCQmlC9aiynX1afumo/Imoc3WWMnDl4abFZ4eHDAOUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/BHT-EMR-API-Scanning
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/BHT-EMR-API-Scanning/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/HISMalawi/BHT-EMR-API.git # timeout=10
+Fetching upstream changes from https://github.com/HISMalawi/BHT-EMR-API.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/HISMalawi/BHT-EMR-API.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+Commit message: "Added documentation on ART regimens retrieval."
+ > git rev-list --no-walk 7d280eb319c9bca296cfc2ef2784dce85d4a8d11 # timeout=10
+[BHT-EMR-API-Scanning] $ /bin/sh -xe /tmp/jenkins8841482025507506256.sh
++ cd /var/lib/jenkins
++ cd /var/www/BHT-EMR-API/
++ git config --global --add safe.directory /var/www/BHT-EMR-API
++ git fetch --tags -f
++ git rev-list --tags --max-count=1
++ git describe --tags 9a15bbf688d5e2a24d8ec18febea126a5451ff48
++ latestTag=v4.15.23
++ git checkout v4.15.23 -f
+HEAD is now at 9a15bbf6 Merge pull request #184 from HISMalawi/add/overview_report
++ ./update-api.sh
++ '[' '' ']'
++ '[' -d /etc/profile.d ']'
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/01-locale-fix.sh ']'
++ . /etc/profile.d/01-locale-fix.sh
++++ /usr/bin/locale-check C.UTF-8
+++ eval
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/apps-bin-path.sh ']'
++ . /etc/profile.d/apps-bin-path.sh
+++ snap_bin_path=/snap/bin
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ export XDG_DATA_DIRS=/usr/local/share:/usr/share
+++ XDG_DATA_DIRS=/usr/local/share:/usr/share
+++ snap_xdg_path=/var/lib/snapd/desktop
+++ '[' -n /usr/local/share:/usr/share ']'
+++ '[' -n /usr/local/share:/usr/share ']'
+++ export XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+++ XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/bash_completion.sh ']'
++ . /etc/profile.d/bash_completion.sh
+++ '[' 'x5.0.17(1)-release' '!=' x -a x '!=' x -a x = x ']'
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/cedilla-portuguese.sh ']'
++ . /etc/profile.d/cedilla-portuguese.sh
+++ '[' '' = pt -a en '!=' pt ']'
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/gawk.sh ']'
++ . /etc/profile.d/gawk.sh
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/Z97-byobu.sh ']'
++ . /etc/profile.d/Z97-byobu.sh
+++ '[' -r /usr/bin/byobu-launch ']'
+++ '[' '' = 0 ']'
+++ '[' '' = 1 ']'
+++ '[' -e /etc/byobu/autolaunch ']'
+++ '[' '' = byobu ']'
+++ '[' '' = byobu-screen ']'
+++ '[' '' = byobu-tmux ']'
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/Z99-cloudinit-warnings.sh ']'
++ . /etc/profile.d/Z99-cloudinit-warnings.sh
+++ cloud_init_warnings
+++ command -v local
+++ local _local=local
+++ local warning= idir=/var/lib/cloud/instance n=0
+++ local warndir=/var/lib/cloud/instance/warnings
+++ local ufile=/var/lib/jenkins/.cloud-warnings.skip sfile=/var/lib/cloud/instance/warnings/.skip
+++ '[' -d /var/lib/cloud/instance/warnings ']'
+++ return 0
+++ unset cloud_init_warnings
++ for i in /etc/profile.d/*.sh
++ '[' -r /etc/profile.d/Z99-cloud-locale-test.sh ']'
++ . /etc/profile.d/Z99-cloud-locale-test.sh
+++ '[' -f /var/lib/jenkins/.cloud-locale-test.skip -o -f /var/lib/cloud/instance/locale-check.skip ']'
+++ locale
+++ locale_warn
+++ command -v local
+++ local _local=local
+++ local bad_names= bad_lcs= key= val= var= vars= bad_kv=
+++ local w1 w2 w3 w4 remain
+++ '[' '' = zsh ']'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LANG
+++ val=en_US.UTF-8
+++ val=en_US.UTF-8
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LANGUAGE
+++ val=
+++ val=
+++ val=
+++ vars=' LANG=en_US.UTF-8 LANGUAGE='
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_CTYPE
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_NUMERIC
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_TIME
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_COLLATE
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_MONETARY
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_MESSAGES
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_PAPER
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_NAME
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8 LC_NAME=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_ADDRESS
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8 LC_NAME=en_US.UTF-8 LC_ADDRESS=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_TELEPHONE
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8 LC_NAME=en_US.UTF-8 LC_ADDRESS=en_US.UTF-8 LC_TELEPHONE=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_MEASUREMENT
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8 LC_NAME=en_US.UTF-8 LC_ADDRESS=en_US.UTF-8 LC_TELEPHONE=en_US.UTF-8 LC_MEASUREMENT=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_IDENTIFICATION
+++ val='"en_US.UTF-8"'
+++ val='en_US.UTF-8"'
+++ val=en_US.UTF-8
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8 LC_NAME=en_US.UTF-8 LC_ADDRESS=en_US.UTF-8 LC_TELEPHONE=en_US.UTF-8 LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=en_US.UTF-8'
+++ read -r w1 w2 w3 w4 remain
+++ case "$w1" in
+++ key=LC_ALL
+++ val=
+++ val=
+++ val=
+++ vars=' LANG=en_US.UTF-8 LANGUAGE= LC_CTYPE=en_US.UTF-8 LC_NUMERIC=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_COLLATE=en_US.UTF-8 LC_MONETARY=en_US.UTF-8 LC_MESSAGES=en_US.UTF-8 LC_PAPER=en_US.UTF-8 LC_NAME=en_US.UTF-8 LC_ADDRESS=en_US.UTF-8 LC_TELEPHONE=en_US.UTF-8 LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=en_US.UTF-8 LC_ALL='
+++ read -r w1 w2 w3 w4 remain
+++ bad_lcs=
+++ bad_kv=
+++ '[' -n '' ']'
+++ return 0
+++ unset locale_warn
++ unset i
++ source “/home/sonarqb-user/.rvm/bin/rvm”
+./update-api.sh: line 2: “/home/sonarqb-user/.rvm/bin/rvm”: No such file or directory
++ [[ -s “.rvmrc” ]]
++ export RAILS_ENV=test
++ RAILS_ENV=test
++ rvm use 2.5.3
+./update-api.sh: line 5: rvm: command not found
++ rm -rf Gemfile.lock
++ bundle install --local
+/usr/bin/env: ‘ruby_executable_hooks’: No such file or directory
++ bin/update_art_metadata.sh development
++ export RAILS_ENV=development
++ RAILS_ENV=development
++ rails db:environment:set RAILS_ENV=development
+bin/update_art_metadata.sh: line 19: rails: command not found
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''username'\'']'
++ USERNAME=root
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''password'\'']'
++ PASSWORD=root
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''database'\'']'
++ DATABASE=openmrs
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''host'\'']'
++ HOST=localhost
+++ ruby -ryaml -e 'puts YAML::load_file('\''config/database.yml'\'')['\''development'\'']['\''port'\'']'
++ PORT=
++ rails db:migrate
+bin/update_art_metadata.sh: line 28: rails: command not found
++ bundle exec rake db:migrate
+/usr/bin/env: ‘ruby_executable_hooks’: No such file or directory
++ mysql -uroot -proot openmrs
+Warning: Using a password on the command line interface can be insecure.
++ mysql -uroot -proot openmrs
+Warning: Using a password on the command line interface can be insecure.
++ mysql -uroot -proot openmrs
+Warning: Using a password on the command line interface can be insecure.
++ mysql -uroot -proot openmrs
+Warning: Using a password on the command line interface can be insecure.
++ git describe --tags
+Finished: SUCCESS
